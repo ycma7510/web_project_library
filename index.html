@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca Triple</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- Envuelve todo el contenido de la página en un nuevo div con la clase page Recuerde agregar la etiqueta de cierre -->
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo.svg"
+            alt="Triple Peaks Library Logo"
+            class="nav__logo"
+          />
+          <!-- Se supone que poner enlaces de navegación en una lista es la mejor práctica para escribir el código semántico, ya que permite a los lectores de pantalla hacer una pausa entre cada enlace en lugar de leer todos los enlaces como una oración. -->
+          <ul class="nav__links">
+            <li>
+              <a class="nav__link">Eventos</a>
+            </li>
+            <li>
+              <a class="nav__link">Preferidos de nuestro staff</a>
+            </li>
+            <li>
+              <a class="nav__link">Hazte miembro</a>
+            </li>
+            <li>
+              <a class="nav__link">Sobre nosotros</a>
+            </li>
+            <li>
+              <a class="nav__link">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">Bienvenidos a la biblioteca de Triple</h1>
+        <p class="header__description">
+          ¡Nos complace abrir las puertas de nuestra biblioteca a todos! Ven y
+          amplía tus conocimientos sobre desarrollo, o simplemente ven a
+          trabajar o estudiar con nosotros. ¡Este es un lugar genial para
+          estudiantes!
+        </p>
+        <!-- ----------------------------------------------------------------- -->
+        <!--    No descomentar hasta la etapa 2 del proyecto.        -->
+        <!-- ----------------------------------------------------------------- -->
+        <img
+          src="./images/inside_the_library.png"
+          alt="Illustration 'Inside the library'"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <a class="header__link">Sobre la librería &darr;</a>
+          <p class="header__address">
+            Avenida del Éxito 200, Ciudad Triple Peaks
+          </p>
+        </div>
+      </header>
+      <main class="content">
+        <section class="events">
+          <!-- --------------------------------------------------------------- -->
+          <!--    No descomentar hasta la etapa 2 del proyecto.      -->
+          <!-- --------------------------------------------------------------- -->
+          <div class="events__content">
+            <h2 class="events__heading">Próximos eventos:</h2>
+            <h3 class="events__title">
+              En honor a Joan Feynman: "Las mujeres en la astrofísica"
+            </h3>
+            <div class="event-info events__info-section">
+              <div class="event-info__item">
+                <div
+                  class="event-info__icon event-info__icon_type_calendar"
+                ></div>
+                <p class="event-info__text">Lunes, 12 de enero.</p>
+              </div>
+              <div class="event-info__item">
+                <div class="event-info__icon event-info__icon_type_pin"></div>
+                <p class="event-info__text">
+                  Sala de conferencias y virtual de la biblioteca de Triple
+                </p>
+              </div>
+            </div>
+            <p class="events__description">
+              En este evento, que celebra el nombre de la biblioteca, nuestra
+              conferencista invitada nos llevará a un viaje para conocer a las
+              investigadoras más destacadas en ciencia espacial a nivel mundial.
+              Se suele tener la falsa idea de que este campo está mayormente
+              dominado por los hombres, pero nuestra conferencia busca cambiar
+              esa noción y probar que no ha sido así desde, al menos, el siglo
+              XVIII.
+            </p>
+            <a href="#" class="events__more">Más eventos &rarr;</a>
+          </div>
+
+          <!-- Empieza a crear la composición aquí. -->
+
+          <div class="events__cover">
+            <img
+              src="./images/cafe.png"
+              alt="library coffeshop"
+              class="events__image"
+            />
+            <div class="person person_name_feynman">
+              <p class="person__caption">Joan Feynman</p>
+              <img
+                src="./images/person_feynman.png"
+                alt="Joan Feynman Pic"
+                class="person__image person__image_size_l"
+              />
+            </div>
+            <div class="person person_name_tarter">
+              <p class="person__caption">Jill Tarter</p>
+              <img
+                src="./images/person_tarter.png "
+                alt="Jill Tarter Pic"
+                class="person__image person__image_size_m"
+              />
+            </div>
+            <div class="person person_name_burbidge">
+              <p class="person__caption">Margaret Burbidge</p>
+              <img
+                src="./images/person_burbidge.png"
+                alt="Margaret Burbidge Pic"
+                class="person__image person__image_size_m"
+              />
+            </div>
+            <div class="person person_name_cannon">
+              <img
+                src="./images/person_cannon.png"
+                alt="Annie Jump Cannon Pic"
+                class="person__image person__image_size_s"
+              />
+              <p class="person__caption">Annie Jump Cannon</p>
+            </div>
+
+            <div class="person person_name_mitchell">
+              <img
+                src="./images/person_mitchell.png"
+                alt="Maria Mitchell Pic"
+                class="person__image person__image_size_s"
+              />
+              <p class="person__caption">Maria Mitchell</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="staff">
+          <!-- --------------------------------------------------------------- -->
+          <!--   No descomentar hasta la etapa final del proyecto.         -->
+          <!-- --------------------------------------------------------------- -->
+          <!--<h2 class="staff__title">Preferidos de nuestro staff</h2>
+        <p class="staff__subtitle">Que nuestros lectores y lectoras aman</p>
+        <ul>
+          <li class="card">
+            <div class="card__content">
+              <h3 class="card__title">Introducción a los algoritmos</h3>
+              <p class="card__text">
+                El nombre de este libro se explica por sí solo, ¡es una introducción adecuada a los algoritmos! Introducción a los algoritmos, o CLRS, en referencia a los apellidos de los autores, profundiza y abarca una serie de algoritmos a lo largo de varios capítulos independientes.
+              </p>
+              <p class="card__footer">
+                Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
+                Clifford Stein
+              </p>
+            </div>
+          </li>
+
+          <li class="card">
+            <div class="card__content">
+              <h3 class="card__title">
+                La estructura e interpretación de los programas computacionales (SICP)
+              </h3>
+              <p class="card__text">
+                Este es uno de los mejores libros para aprender los conceptos básicos de la programación. Incluido por el MIT en uno de sus cursos fundamentales de programación, SICP es un libro de programación de uso general que utiliza Scheme para ejemplificar diversos conceptos de programación.
+              </p>
+              <p class="card__footer">
+                Harold Abelson, Gerald Jay Sussman, Julie Sussman
+              </p>
+            </div>
+          </li>
+
+          <li class="card">
+            <div class="card__content">
+              <h3 class="card__title">
+                El programador limpio: un código de conducta para programadores profesionales
+              </h3>
+              <p class="card__text">
+                Elaborado por el experimentado ingeniero de software y escritor Rober C. Martin (también conocido como Tío Bob), analiza las técnicas y herramientas de la verdadera artesanía de software. Explica cómo escribir código limpio y muestra cómo cultivar la actitud de un programador profesional, altamente cualificado.
+              </p>
+              <p class="card__footer">Steve McConnell</p>
+            </div>
+          </li>
+
+          <li class="card">
+            <div class="card__content">
+              <h3 class="card__title">
+                Código completo: un manual práctico de construcción de software
+              </h3>
+              <p class="card__text">
+                ¿Quieres saber cómo escribir código robusto independientemente de la arquitectura detrás del lenguaje de programación de tu elección? Entonces, podrías leer Código completo: un práctico manual sobre construcción de software. El cual abarca de forma general todo lo relacionado con la buena estructura de código.
+              </p>
+              <p class="card__footer">Steve McConnell</p>
+            </div>
+          </li>
+        </ul>-->
+        </section>
+
+        <section class="membership">
+          <!-- --------------------------------------------------------------- -->
+          <!--   No descomentar hasta la etapa final del proyecto.         -->
+          <!-- --------------------------------------------------------------- -->
+          <!--<h2 class="membership__title">¡Convertirse en miembro de la biblioteca es muy fácil! </h2>
+        <ul class="membership__steps">
+          <li class="step">
+            <h3 class="step__title">
+              Paso 1
+              <img
+                src="./images/icon_step_forward.svg"
+                alt="icon forward"
+                class="step__icon"
+              />
+            </h3>
+            <p class="step__description">
+              Completa el formulario de afiliación en línea o en persona.
+            </p>
+          </li>
+          <li class="step">
+            <h3 class="step__title">
+              Paso 2
+              <img
+                src="./images/icon_step_forward.svg"
+                alt="icon forward"
+                class="step__icon"
+              />
+            </h3>
+            <p class="step__description">
+              Ven y recoge tu credencial de la biblioteca en la recepción.
+            </p>
+          </li>
+          <li class="step">
+            <h3 class="step__title">
+              Paso 3
+              <img
+                src="./images/icon_step_forward.svg"
+                alt="icon forward"
+                class="step__icon"
+              />
+            </h3>
+            <p class="step__description">Firma el envés de la tarjeta.</p>
+          </li>
+          <li class="step">
+            <h3 class="step__title">
+              Paso 4
+              <img
+                src="./images/icon_step_finish.svg"
+                alt="icon finish"
+                class="step__icon"
+              />
+            </h3>
+            <p class="step__description">
+              ¡Disfruta de los increíbles beneficios de nuestra membresía!
+            </p>
+          </li>
+        </ul>-->
+        </section>
+
+        <section class="about">
+          <!-- --------------------------------------------------------------- -->
+          <!--      No descomentar hasta la etapa final del proyecto.      -->
+          <!-- --------------------------------------------------------------- -->
+          <!--<h2 class="about__title">Sobre la biblioteca</h2>
+        <div class="about__content">
+          <p class="about__paragraph">
+            Las bibliotecas son centros imprescindibles en prácticamente cualquier ciudad, y TripleTen no es la excepción. Abrió sus puertas por primera vez en 2018, ¡cuando nuestra pequeña ciudad daba la bienvenida a sus primeros habitantes!
+          </p>
+          <p class="about__paragraph">
+            Desde su apertura inicial, la biblioteca ha recibido casi 342 visitantes cada mes. ¡Es casi el 50% de nuestra población! Hasta ahora, la mayoría de nuestros ciudadanos han disfrutado de leer libros y hacer uso de nuestros amplios recursos en línea.
+          </p>
+          <p class="about__paragraph">
+            La biblioteca toma su nombre en honor a Joan Feynman, una astrofísica estadounidense y la primera mujer en ser elegida como oficial de la Unión Geofísica Americana.
+          </p>
+        </div>
+        <div class="about__circle"></div> -->
+        </section>
+      </main>
+      <footer class="footer">
+        <!-- ----------------------------------------------------------------- -->
+        <!--      No descomentar hasta la etapa final del proyecto.        -->
+        <!-- ----------------------------------------------------------------- -->
+      </footer>
+    </div>
+  </body>
+</html>
